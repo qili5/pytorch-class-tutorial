@@ -18,7 +18,7 @@ print("Is this a PyTorch model?", isinstance(model, torch.nn.Module))
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = model.to(device)          # move the model's weights onto that device
 model.eval()                      # inference mode (turns off dropout, etc.)
-print("Using device name:", device)
+print("Using device:", device)
 
 # Step 4: tokenize text into PyTorch tensors, then move them to the same device
 prompt = "Translate to English: Je t'aime."

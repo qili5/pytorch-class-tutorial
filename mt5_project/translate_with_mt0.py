@@ -1,7 +1,7 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
-CHECKPOINT = "bigscience/mt0-small"
+CHECKPOINT = "bigscience/mt0-small"  # or "bigscience/mt0-large" for a larger model
 
 # Same PyTorch device pattern as any other model: use a GPU if one's available
 if torch.cuda.is_available():

@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+.python-version
+
+# Hugging Face / model caches & checkpoints
+.cache/
+hf_cache/
+models/
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Outputs & logs
+outputs/
+runs/
+logs/
+*.log
+*.out
+*.err
+slurm-*.out
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Secrets
+.env

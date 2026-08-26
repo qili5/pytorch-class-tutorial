@@ -21,7 +21,7 @@ python setup.py          # prints the PyTorch version and whether CUDA is availa
 
 ---
 
-## 1. Tensor fundamentals — [`tensor_fund/`](tensor_fund/)
+## 1. Tensor fundamentals — [`tensor_fundamental/`](tensor_fundamental/)
 
 The core PyTorch material, in teaching order.
 
@@ -29,42 +29,42 @@ The core PyTorch material, in teaching order.
 
 | File | Topic |
 |---|---|
-| [`create_tensor.py`](tensor_fund/create_tensor.py) | The simplest possible tensor |
-| [`tensors.py`](tensor_fund/tensors.py) | Building tensors from Python lists |
-| [`scalar_dim.py`](tensor_fund/scalar_dim.py) | Scalars, `ndim` and `shape` |
-| [`vectors.py`](tensor_fund/vectors.py) | 1-D tensors |
-| [`matrixs.py`](tensor_fund/matrixs.py) | 2-D tensors |
-| [`zeros_ones.py`](tensor_fund/zeros_ones.py) | `torch.zeros()` and `torch.ones()` |
-| [`range_like.py`](tensor_fund/range_like.py) | `torch.arange()`, `zeros_like()`, `ones_like()` |
-| [`random_tensors.py`](tensor_fund/random_tensors.py) | `torch.rand()` |
+| [`create_tensor.py`](tensor_fundamental/create_tensor.py) | The simplest possible tensor |
+| [`tensors.py`](tensor_fundamental/tensors.py) | Building tensors from Python lists |
+| [`scalar_dim.py`](tensor_fundamental/scalar_dim.py) | Scalars, `ndim` and `shape` |
+| [`vectors.py`](tensor_fundamental/vectors.py) | 1-D tensors |
+| [`matrixs.py`](tensor_fundamental/matrixs.py) | 2-D tensors |
+| [`zeros_ones.py`](tensor_fundamental/zeros_ones.py) | `torch.zeros()` and `torch.ones()` |
+| [`range_like.py`](tensor_fundamental/range_like.py) | `torch.arange()`, `zeros_like()`, `ones_like()` |
+| [`random_tensors.py`](tensor_fundamental/random_tensors.py) | `torch.rand()` |
 
 **Operations**
 
 | File | Topic |
 |---|---|
-| [`addition_subtraction.py`](tensor_fund/addition_subtraction.py) | Adding and subtracting |
-| [`division_elementwise_multiplication.py`](tensor_fund/division_elementwise_multiplication.py) | Element-wise maths |
-| [`matrix_multiplication.py`](tensor_fund/matrix_multiplication.py) | `torch.matmul()` |
-| [`shape_errors.py`](tensor_fund/shape_errors.py) | Why shapes must line up |
-| [`transpose.py`](tensor_fund/transpose.py) | Fixing shapes with `.T` |
+| [`addition_subtraction.py`](tensor_fundamental/addition_subtraction.py) | Adding and subtracting |
+| [`division_elementwise_multiplication.py`](tensor_fundamental/division_elementwise_multiplication.py) | Element-wise maths |
+| [`matrix_multiplication.py`](tensor_fundamental/matrix_multiplication.py) | `torch.matmul()` |
+| [`shape_errors.py`](tensor_fundamental/shape_errors.py) | Why shapes must line up |
+| [`transpose.py`](tensor_fundamental/transpose.py) | Fixing shapes with `.T` |
 
 **Aggregation**
 
 | File | Topic |
 |---|---|
-| [`aggregation.py`](tensor_fund/aggregation.py) | `min()`, `max()`, `sum()`, `mean()` |
-| [`mean_error.py`](tensor_fund/mean_error.py) | Why `mean()` fails on an integer tensor |
-| [`mean_fix.py`](tensor_fund/mean_fix.py) | The fix: convert to `float32` |
-| [`positional_min_max.py`](tensor_fund/positional_min_max.py) | `argmax()` and `argmin()` |
+| [`aggregation.py`](tensor_fundamental/aggregation.py) | `min()`, `max()`, `sum()`, `mean()` |
+| [`mean_error.py`](tensor_fundamental/mean_error.py) | Why `mean()` fails on an integer tensor |
+| [`mean_fix.py`](tensor_fundamental/mean_fix.py) | The fix: convert to `float32` |
+| [`positional_min_max.py`](tensor_fundamental/positional_min_max.py) | `argmax()` and `argmin()` |
 
 **Datatypes and devices**
 
 | File | Topic |
 |---|---|
-| [`datatypes.py`](tensor_fund/datatypes.py) | `float16` / `float32` / `float64` / `int8`, memory and precision |
-| [`datatype_error.py`](tensor_fund/datatype_error.py) | Dtype mismatch errors |
-| [`datatype_error_fix.py`](tensor_fund/datatype_error_fix.py) | Fixing them with `.type()` |
-| [`device_mismatch.py`](tensor_fund/device_mismatch.py) | CPU vs GPU tensors |
+| [`datatypes.py`](tensor_fundamental/datatypes.py) | `float16` / `float32` / `float64` / `int8`, memory and precision |
+| [`datatype_error.py`](tensor_fundamental/datatype_error.py) | Dtype mismatch errors |
+| [`datatype_error_fix.py`](tensor_fundamental/datatype_error_fix.py) | Fixing them with `.type()` |
+| [`device_mismatch.py`](tensor_fundamental/device_mismatch.py) | CPU vs GPU tensors |
 
 ---
 

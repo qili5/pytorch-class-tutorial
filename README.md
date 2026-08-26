@@ -87,11 +87,9 @@ returns a computer model's **forecast**, while IEM (hosted by Iowa State)
 returns **actual observations** from Iowa airport weather stations. They
 disagree, and both are correct.
 
-**Not web APIs** — these two use the Hugging Face *library* API and run models
-locally:
-
-- [`pipeline_basics.py`](api_tutorial/pipeline_basics.py) — `pipeline()` for sentiment analysis
-- [`tokenizer_and_model.py`](api_tutorial/tokenizer_and_model.py) — the same work done manually, showing it is all PyTorch underneath
+**Not a web API** — [`tokenizer_and_model.py`](api_tutorial/tokenizer_and_model.py)
+uses the Hugging Face *library* API and runs a model locally, showing that it is
+all PyTorch underneath.
 
 ---
 
@@ -101,6 +99,7 @@ Loading pretrained transformer models and running them.
 
 | File | Topic |
 |---|---|
+| [`pipeline_basics.py`](HF_project/pipeline_basics.py) | `pipeline()` for sentiment analysis |
 | [`loading_model.py`](HF_project/loading_model.py) | Downloading a checkpoint |
 | [`tokenize_tensor.py`](HF_project/tokenize_tensor.py) | Text becomes tensors |
 | [`translate_with_mt0.py`](HF_project/translate_with_mt0.py) | Translation with mT0 |

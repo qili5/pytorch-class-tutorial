@@ -14,7 +14,6 @@ print("torch.divide(tensor, 10):", torch.divide(tensor, 10))
 # The original tensor is unchanged -- operations above weren't reassigned
 print("Tensor after operations (unchanged):", tensor)
 
-# Element-wise multiplication: each element multiplies its equivalent (index 0->0, 1->1, 2->2)
-# NOT the same as matrix multiplication
+# Element-wise multiplication: each element multiplies its equivalent
 print(tensor, "*", tensor)
 print("Equals:", tensor * tensor)

@@ -2,7 +2,7 @@ import torch
 from pathlib import Path
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
-CHECKPOINT = "google-t5/t5-small"
+CHECKPOINT = "google-t5/t5-large"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Using device:", device)

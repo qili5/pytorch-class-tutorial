@@ -1,11 +1,3 @@
-"""Iowa Environmental Mesonet (IEM) -- an API hosted by Iowa State.
-
-Flow:  Python program -> IEM API -> JSON response -> extract data -> display
-
-The important difference from weather_app.py: Open-Meteo gives you a *forecast*
-produced by a computer model. IEM gives you *observations* -- what physical
-instruments at Iowa airports actually recorded. That is why the two disagree.
-"""
 import requests
 from datetime import date, timedelta
 
@@ -39,12 +31,6 @@ def f_to_c(fahrenheit):
     return None if fahrenheit is None else (fahrenheit - 32) * 5 / 9
 
 def fetch(endpoint: str, **params):
-    """Call an IEM endpoint and hand back the rows.
-
-    IEM answers with a 'table' shaped payload: {"schema": {...}, "data": [...]}.
-    The schema lists ~70 possible columns; 'data' holds one dict per row. Most
-    columns are null for any given station, so always use .get() on these rows.
-    """
     response = requests.get(f"{BASE_URL}/{endpoint}", params=params, timeout=30)
     response.raise_for_status()  # raise an error if the request failed
     return response.json()["data"]

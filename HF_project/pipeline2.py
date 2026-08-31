@@ -3,7 +3,7 @@ from transformers import pipeline
 generator = pipeline("text-generation", model="distilgpt2")
 
 result = generator(
-    "I love python because",
+    "Python is",
     max_length=30,
     num_return_sequences=2,
 )

@@ -4,9 +4,7 @@
 
 # PyTorch Class Tutorial
 
-Teaching material for an introductory PyTorch course. Each file is a small,
-self-contained script that runs on its own and prints its output, so it can be
-walked through one slide at a time in class.
+Teaching material for an introductory PyTorch course.
 
 ---
 

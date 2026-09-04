@@ -3,3 +3,6 @@ transformers>=4.40
 sentencepiece>=0.1.99   # mT5/mT0 tokenizer is SentencePiece-based
 protobuf>=3.20          # needed to convert the slow SentencePiece tokenizer
 requests>=2.31          # HTTP client for the api_tutorial scripts
+datasets
+jupyter>=1.0.0
+ipykernel>=6.25.2

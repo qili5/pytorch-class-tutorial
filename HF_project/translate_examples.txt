@@ -1,3 +1,4 @@
 Translate to English: Bonjour, comment ça va?
-Translate to French: I am a student.
-Translate to Spanish: I am learning PyTorch.
+Translate to Spanish: Hello, what's happening?
+Translate to French: Hola, ¿qué sucede?
+Translate to English: Salut, quoi s'est-ce que ça?

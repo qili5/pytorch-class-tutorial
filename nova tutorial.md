@@ -23,16 +23,16 @@ If you don't have your directory yet, then you need to create one first. To do s
 > cd /work/classtmp/<username>
 
 You can copy demo code by the following command
-> cp -r /work/classtmp/coms3710/pytorch-class-tutorial /work/classtmp/<username>
+> cp -r /work/classtmp/coms3710/pytorch-class-tutorial/* /work/classtmp/<username>
 
 3. Set up Python virtual environments 
 https://research.it.iastate.edu/python-virtual-environments 
 
-This will create a virtual enviroment in direcotry "demo" in your current directory (if demo directory does not exit, the command will create one)
-> python -m venv .venv 
+This will create a virtual enviroment in direcotry "venv" in your current directory (if venv directory does not exit, the command will create one)
+> python -m venv venv 
 
 This will activate the venv
-> source .venv/bin/activate
+> source venv/bin/activate
 
 This will upgrade the pip
 >  python -m pip install --upgrade pip

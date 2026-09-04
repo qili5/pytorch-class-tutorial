@@ -1,19 +1,22 @@
 from datasets import load_dataset
+import pprint
+# Download entire data
+ds = load_dataset("openai/gsm8k",'main')
+print(ds) # Basic info
 
-# Load a famous NLP benchmark for QA task
-# ds = load_dataset("rajpurkar/squad")
-# print(ds)
+train = ds["train"] # get the train split
 
-# DatasetDict({
-#     train: Dataset({features: ['id','title','context','question','answers'], num_rows: 87599})
-#     validation: Dataset({features: [...], num_rows: 10570})
-# })
+pprint.pp(train.features) # Column names and types
+pprint.pp(train[0])                        # first row as dict
 
+print()
 # Load just one split
-# train = load_dataset("rajpurkar/squad", split="train")
+# train = load_dataset("openai/gsm8k",'main', split="train")
 
 
 # Stream huge datasets without downloading (lazy iteration)
-ds = load_dataset("rajpurkar/squad", split="train", streaming=True)
+ds = load_dataset("stanfordnlp/imdb", split="train", streaming=True)
+# this dataset is much bigger
 for example in ds.take(3):
-    print(example["question"])
+    pprint.pp(example["text"])
+# grab the first 3 examples from the dataset, and for each one, print just the question field.

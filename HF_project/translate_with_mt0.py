@@ -29,7 +29,7 @@ def translate(prompt: str) -> str:
     )
     return tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-file_path = "mt5_project/translate_examples.txt"
+file_path = "/work/classtmp/coms3710/pytorch-class-tutorial/HF_project/translate_examples.txt"
 with open(file_path, "r") as file:
     examples = file.read()
 examples_file = examples.strip().splitlines()

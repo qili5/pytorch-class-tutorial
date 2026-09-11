@@ -6,3 +6,5 @@ requests>=2.31          # HTTP client for the api_tutorial scripts
 datasets
 jupyter>=1.0.0
 ipykernel>=6.25.2
+torchvision
+matplotlib

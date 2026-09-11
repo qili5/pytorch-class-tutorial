@@ -3,10 +3,10 @@ from transformers import pipeline
 classifier = pipeline("sentiment-analysis")
 
 result = classifier("PyTorch is fun to learn!")
-print(result)  # [{'label': 'POSITIVE', 'score': 0.99...}]
+print(result)  
 
 result = classifier("This assignment is way too hard.")
-print(result)  # [{'label': 'NEGATIVE', 'score': 0.99...}]
+print(result) 
 
 # pipeline() also works on a list of inputs at once
 results = classifier([

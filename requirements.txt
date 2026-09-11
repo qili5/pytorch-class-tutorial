@@ -1,3 +1,8 @@
+# python -m venv venv
+# source venv/bin/activate
+# python -m pip install --upgrade pip
+# pip install -r requirements.txt
+
 torch>=2.0
 transformers>=4.40
 sentencepiece>=0.1.99   # mT5/mT0 tokenizer is SentencePiece-based

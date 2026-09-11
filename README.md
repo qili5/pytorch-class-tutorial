@@ -18,6 +18,9 @@ python setup.py          # prints the PyTorch version and whether CUDA is availa
 ```
 
 ---
+## 0. Python string — [`string.ipynb`](./string.ipynb)
+
+The basic operations of string and regular expression
 
 ## 1. Tensor fundamentals — [`tensor_fundamental/`](tensor_fundamental/)
 

@@ -109,8 +109,7 @@ Loading pretrained transformer models and running them.
 
 ## Requirements
 
-`torch`, `transformers`, `sentencepiece`, `protobuf`, `requests` — see
-[`requirements.txt`](requirements.txt).
+see [`requirements.txt`](requirements.txt).
 
 A GPU is optional. Scripts that use one check `torch.cuda.is_available()` first
 and fall back to the CPU.

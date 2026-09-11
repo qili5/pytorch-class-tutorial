@@ -37,5 +37,5 @@ with torch.no_grad():
 print("Raw output tokens:", outputs)
 
 # Step 6: decode the output tokens back into text
-text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+text = tokenizer.decode(outputs[0], skip_special_tokens=False)
 print("Decoded output:", text)

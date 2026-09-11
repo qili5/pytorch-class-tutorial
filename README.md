@@ -67,7 +67,7 @@ The core PyTorch material, in teaching order.
 | [`datatype_error_fix.py`](tensor_fundamental/datatype_error_fix.py) | Fixing them with `.type()` |
 | [`device_mismatch.py`](tensor_fundamental/device_mismatch.py) | CPU vs GPU tensors |
 
-**Building Model**
+**Building a Model**
 | File | Topic |
 |---|---|
 |[`cifar10_tutorial.ipynb`](tensor_fundamental/cifar10_tutorial.ipynb) | Tutorial of building a CNN model using PyTorch |
